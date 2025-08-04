@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purple Themed Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('background.jpg'); /* Replace this with your uploaded image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: #fff;
+      position: relative;
+    }
+
+    /* Purple overlay for contrast */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(75, 0, 130, 0.5); /* Indigo overlay */
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #e0b3ff;
+      margin-bottom: 30px;
+    }
+
+    .paragraph {
+      margin-bottom: 20px;
+      line-height: 1.8;
+      color: #f3e5ff;
+    }
+
+    .image {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%;
+      border-radius: 10px;
+      border: 2px solid #bb86fc;
+    }
+
+    .img-inline {
+      float: right;
+      margin: 10px 0 10px 20px;
+      max-width: 250px;
+      border-radius: 8px;
+      border: 2px solid #c084fc;
+    }
+
+    @media (max-width: 600px) {
+      .img-inline {
+        float: none;
+        display: block;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Purple Page</h1>
+
+    <p class="paragraph">
+      <img src="https://via.placeholder.com/250x150" alt="Sample 1" class="img-inline">
+      This paragraph demonstrates an image floated to the right with text wrapping around it. The purple theme gives a calm, creative vibe—perfect for a personal site or a creative portfolio.
+    </p>
+
+    <p class="paragraph">
+      You can continue adding your own text here. The blurred background keeps things readable while still letting the beauty of the background image shine through.
+    </p>
+
+    <img src="https://via.placeholder.com/600x300" alt="Sample image" class="image">
+
+    <p class="paragraph">
+      Customize the fonts, colors, and layout to suit your vision. With a full-page background and translucent content, your site will stand out without overwhelming the viewer.
+    </p>
+  </div>
+</body>
+</html>
